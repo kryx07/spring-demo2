@@ -4,6 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
 public class TennisCoach implements Coach {
     @Autowired
@@ -26,5 +29,15 @@ public class TennisCoach implements Coach {
 
     public String getDailyFortune() {
         return fortuneService.getDailyFortune();
+    }
+
+    @PreDestroy
+    public void preDestroyMethod(){
+        System.out.println("I'm about to be destroyed");
+    }
+
+    @PostConstruct
+    public void postConstructMethod(){
+        System.out.println("I've just been created");
     }
 }
