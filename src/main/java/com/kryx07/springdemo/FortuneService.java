@@ -1,6 +1,6 @@
 package com.kryx07.springdemo;
 
-public interface Coach {
-    String getDailyWorkout();
+public interface FortuneService {
+
     String getDailyFortune();
 }
