@@ -11,5 +11,9 @@
 
     <bean id="myCoach" class="com.kryx07.springdemo.CricketCoach">
         <property name="fortuneService" ref="fortuneService"/>
+
+        <property name="email" value="test@test.com"/>
+        <property name="team" value="The Best Team"/>
+
     </bean>
 </beans>
