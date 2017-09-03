@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
-@Component("coach")
+@Component
 public class TennisCoach implements Coach {
     public String getDailyWorkout() {
         return "Do Tennis workout";
