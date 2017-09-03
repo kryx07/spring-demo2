@@ -6,6 +6,6 @@ public class TrackCoach implements Coach {
     }
 
     public String getDailyFortune() {
-        return null;
+        return "Just do it";
     }
 }

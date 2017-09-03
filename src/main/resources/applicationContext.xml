@@ -9,7 +9,7 @@
 
     <bean id="fortuneService" class="com.kryx07.springdemo.HappyFortuneService"/>
 
-    <bean id="myCoach" class="com.kryx07.springdemo.BaseballCoach">
-        <constructor-arg ref="fortuneService"/>
+    <bean id="myCoach" class="com.kryx07.springdemo.CricketCoach">
+        <property name="fortuneService" ref="fortuneService"/>
     </bean>
 </beans>
